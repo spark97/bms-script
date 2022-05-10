@@ -1,3 +1,4 @@
 beautifulsoup4
 git+https://github.com/Wyattjoh/pushover
 requests
+html5lib
