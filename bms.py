@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-from pushbullet import PushBullet
-import http.client, urllib
 from pushover import Pushover
 
 URL = "https://in.bookmyshow.com/sports/tata-indian-premier-league-2022/ET00325171"
@@ -13,7 +11,7 @@ soup = BeautifulSoup(r.content, 'html5lib') # If this line causes an error, run 
 div1 = soup.find('div', attrs = {'class':'df-im'}) 
 
 isFinal = False
-keyword = "Final"
+keyword = "lsg"
 
 for row in div1:
 	div2 = row.select('a > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)')
